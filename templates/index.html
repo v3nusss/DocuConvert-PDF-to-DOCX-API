@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuConvert - Multiple Format Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DocuConvert</h1>
+        <p>Select a conversion type and upload files for conversion</p>
+
+        <!-- Form for selecting conversion type -->
+        <div class="form-container">
+            <h2>Select Conversion Type</h2>
+            <form action="/convert" method="POST" enctype="multipart/form-data">
+                <label for="conversion-type">Conversion Type:</label>
+                <select id="conversion-type" name="conversion_type" required>
+                    <option value="pdf_to_docx">PDF to DOCX</option>
+                    <option value="docx_to_pdf">DOCX to PDF</option>
+                    <option value="pdf_to_txt">PDF to TXT</option>
+                    <option value="docx_to_txt">DOCX to TXT</option>
+                    <option value="pptx_to_pdf">PPTX to PDF</option>
+                </select>
+
+                <label for="file">Choose Files:</label>
+                <input type="file" name="file" id="file" multiple required>
+
+                <button type="submit">Convert Files</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
