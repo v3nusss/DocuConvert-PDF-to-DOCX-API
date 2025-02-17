@@ -1,31 +1,31 @@
-# DocuConvert: PDF ↔ DOCX API 🚀
+# DocuConvert-PDF-to-DOCX-API
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)  
-![Flask](https://img.shields.io/badge/Flask-2.0%2B-green.svg)  
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)  
+This is a simple and efficient API for converting files between PDF, DOCX, PPTX, and TXT formats. It is built using **Flask** and provides a user-friendly interface to easily upload and convert files. It also supports various formats for both input and output, making it a versatile tool for document conversion.
 
-## 🔹 Description  
-DocuConvert is a simple and efficient API for **PDF ↔ DOCX** file conversion, allowing automation via HTTP requests.  
-Built with **Flask**, it uses `pdf2docx` for **PDF → DOCX** conversion and `docx2pdf` for **DOCX → PDF** conversion.  
+## Features
 
----
+- Convert **PDF to DOCX**.
+- Convert **DOCX to PDF**.
+- Convert **PPTX to PDF**.
+- Convert **PDF to TXT**.
+- Convert **DOCX to TXT**.
+- Beautiful **UI** for easy use and multiple format selections.
 
-## 🛠 Technologies Used  
-- **Python 3.10+**  
-- **Flask** (Backend API)  
-- **pdf2docx** (PDF to DOCX conversion)  
-- **docx2pdf** (DOCX to PDF conversion)  
-- **Werkzeug** (File handling)  
+## Tech Stack
 
----
+- **Backend**: Python with Flask
+- **Frontend**: HTML, CSS, JavaScript (using Flask's rendering system)
+- **File Conversion**: `pdf2docx`, `python-pptx`, `python-docx`, `PyPDF2`
+- **Storage**: Temporary file storage for uploaded documents
+- **Libraries**: Flask, werkzeug, pdf2docx, python-pptx, python-docx, PyPDF2
 
 ## 🚀 Installation and Usage  
 
 ### 🔹 **1. Clone the repository**  
 ```sh
-git clone https://github.com/your-username/docuconvert.git  
-cd docuconvert
-```
+git clone https://github.com/<your_username>/DocuConvert-PDF-to-DOCX-API.git  
+cd DocuConvert-PDF-to-DOCX-API
+
 
 ### 🔹 **2. Create a virtual environment and install dependencies**  
 ```sh
